@@ -10,4 +10,4 @@ BACKUP_DIR="/mnt/c"
 BACKUP_FILE="backup.tar.gz"
 
 # Створення резервної копії
-tar -czf "$BACKUP_DIR/$BACKUP_FILE" "$SOURCE_DIR"
+tar -czf "$BACKUP_DIR/$BACKUP_FILE" --exclude="*/*.dat" "$SOURCE_DIR"
